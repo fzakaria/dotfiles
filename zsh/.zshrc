@@ -107,7 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=$PATH:~/.rbenv/bin:~/.nodenv/bin
+export PATH=$PATH:~/.rbenv/bin:~/.nodenv/bin:~/bin
 
 # rbenv setup
 # https://github.com/rbenv/rbenv#how-rbenv-hooks-into-your-shell
