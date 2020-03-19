@@ -12,7 +12,7 @@
 	pager = "diff-so-fancy | less --tabs=4 -RFX"
 	# Global ignore file (not shared)
 	excludesfile = ~/.gitignore_global
-	editor = subl -n -w
+	editor = vim
 	# Don't consider trailing space change as a cause for merge conflicts
 	whitespace = -trailing-space
 [alias]
