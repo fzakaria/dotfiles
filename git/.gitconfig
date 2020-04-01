@@ -18,6 +18,8 @@
 [alias]
 	# List available aliases
 	aliases = !git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'
+	# get a diff not fancy!
+	patch = !git --no-pager diff --no-color
 	# Command shortcuts
     co = checkout
     st = status
@@ -49,3 +51,25 @@
  	submoduleSummary = true
  	# Recursively traverse untracked directories to display all contents
  	showUntrackedFiles = all
+[diff]
+	tool = bc3
+[difftool "bc3"]
+	trustExitCode = true
+[difftool]
+	prompt = false
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	trustExitCode = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
