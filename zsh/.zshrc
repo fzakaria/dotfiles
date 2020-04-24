@@ -118,3 +118,6 @@ eval "$(nodenv init -)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Add JAVA_HOME according to update-alternatives
+export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
