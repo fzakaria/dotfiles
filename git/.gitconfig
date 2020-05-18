@@ -35,7 +35,9 @@
     # Undo last commit but keep changed files in stage
     uncommit = reset --soft HEAD~1
 	# Remove file(s) from Git but not from disk
-	untrack = rm --cache --
+    untrack = rm --cache --
+    # Print recent branches used
+    brv = branch --sort=-committerdate -vvv
 [pull]
 	# This is GREAT… when you know what you're doing and are careful
 	# not to pull --no-rebase over a local line containing a true merge.
